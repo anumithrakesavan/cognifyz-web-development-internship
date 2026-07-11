@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Advanced Bootstrap Grid</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .section-title {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MyGrid</a>
+  </div>
+</nav>
+
+<!-- Grid Section -->
+<div class="container py-5">
+    <h2 class="text-center section-title mb-5">Responsive Card Grid</h2>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Web Design</h5>
+                    <p class="card-text">Create modern and responsive websites.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Cyber Security</h5>
+                    <p class="card-text">Protect systems and networks from attacks.</p>
+                    <a href="#" class="btn btn-success">Explore</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/400x250" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="card-title">App Development</h5>
+                    <p class="card-text">Build powerful mobile applications.</p>
+                    <a href="#" class="btn btn-warning">Discover</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

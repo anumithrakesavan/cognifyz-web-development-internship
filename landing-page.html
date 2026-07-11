@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Developer Internship | Cognifyz Technologies</title>
+
+<style>
+:root {
+    --primary: #5f2eea;
+    --secondary: #00c6ff;
+    --dark: #121826;
+    --light: #f4f7ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: var(--light);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+nav h2 {
+    color: var(--primary);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: white;
+    color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: #e6e6ff;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: var(--dark);
+}
+
+/* ===== CARDS ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+/* ===== QUALIFICATIONS ===== */
+.qualifications ul {
+    list-style: disc;
+    padding-left: 20px;
+    max-width: 600px;
+    margin: auto;
+    font-size: 17px;
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background: white;
+    color: var(--primary);
+}
+
+.cta .btn:hover {
+    background: #ddd;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Cognifyz</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Highlights</a></li>
+        <li><a href="#">Qualifications</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Web Developer Internship Opportunities at Cognifyz Technologies</h1>
+        <p>
+            Join our 3–6 month internship program designed to provide hands-on
+            experience in real-world web development projects while learning
+            from industry experts.
+        </p>
+        <a href="#" class="btn btn-primary">Apply Now</a>
+    </div>
+</div>
+
+<!-- HIGHLIGHTS -->
+<section>
+    <h2>Internship Highlights</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Real-World Projects</h3>
+            <p>Gain practical experience by working on live client-based applications.</p>
+        </div>
+        <div class="card">
+            <h3>Mentorship</h3>
+            <p>Learn directly from senior developers and tech leads.</p>
+        </div>
+        <div class="card">
+            <h3>Career Growth</h3>
+            <p>Enhance your technical and soft skills to become industry-ready.</p>
+        </div>
+    </div>
+</section>
+
+<!-- QUALIFICATIONS -->
+<section class="qualifications">
+    <h2>Qualifications</h2>
+    <ul>
+        <li>Basic knowledge of HTML, CSS, and JavaScript</li>
+        <li>Understanding of responsive web design</li>
+        <li>Familiarity with Git & version control</li>
+        <li>Knowledge of React or Bootstrap (preferred)</li>
+        <li>Strong analytical and communication skills</li>
+    </ul>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>Start Your Web Development Career Today!</h2>
+    <a href="#" class="btn">Learn More</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p><strong>Contact Us</strong></p>
+    <p>Email: hr@cognifyztech.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>© 2026 Cognifyz Technologies. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
